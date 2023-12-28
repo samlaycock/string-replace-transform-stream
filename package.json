@@ -1,0 +1,55 @@
+{
+  "name": "string-replace-transform-stream",
+  "version": "0.0.10",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.es.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "npm run build",
+    "test": "NODE_OPTIONS='--import=tsx/cjs' ava"
+  },
+  "keywords": [
+    "stream",
+    "web-streams",
+    "transform",
+    "replace",
+    "string",
+    "string-replace-transform-stream"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "~1.4.1",
+    "@changesets/cli": "~2.27.1",
+    "@commitlint/cli": "~18.4.3",
+    "@commitlint/config-conventional": "~18.4.3",
+    "@types/node": "~20.10.5",
+    "ava": "~6.0.1",
+    "changeset": "~0.2.6",
+    "husky": "~8.0.3",
+    "tsx": "~4.7.0",
+    "turbo": "~1.11.2",
+    "typescript": "~5.3.3",
+    "vite": "~5.0.10",
+    "vite-plugin-dts": "~3.7.0"
+  }
+}
