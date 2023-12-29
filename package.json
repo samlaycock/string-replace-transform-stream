@@ -16,14 +16,11 @@
       }
     }
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "sideEffects": false,
   "scripts": {
     "build": "vite build",
     "prepare": "pnpm run build",
-    "publish": "changeset publish",
     "test": "NODE_OPTIONS='--import=tsx/cjs' ava",
     "tsc": "tsc"
   },
