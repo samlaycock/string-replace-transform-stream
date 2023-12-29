@@ -20,6 +20,7 @@
     "isolatedModules": true,
     "incremental": true,
     "noUncheckedIndexedAccess": true,
+    "noEmit": true,
     "baseUrl": ".",
     "outDir": "dist"
   },

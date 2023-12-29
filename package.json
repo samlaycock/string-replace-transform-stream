@@ -16,16 +16,15 @@
       }
     }
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "npm run build",
-    "test": "NODE_OPTIONS='--import=tsx/cjs' ava"
+    "test": "NODE_OPTIONS='--import=tsx/cjs' ava",
+    "tsc": "tsc"
   },
   "keywords": [
     "stream",
