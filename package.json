@@ -19,10 +19,8 @@
   "files": ["dist"],
   "sideEffects": false,
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "prepare": "npm run build",
+    "build": "vite build",
+    "prepare": "pnpm run build",
     "publish": "changeset publish",
     "test": "NODE_OPTIONS='--import=tsx/cjs' ava",
     "tsc": "tsc"
