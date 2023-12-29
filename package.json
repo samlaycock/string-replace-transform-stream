@@ -1,6 +1,6 @@
 {
   "name": "string-replace-transform-stream",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.mjs",
   "types": "./dist/index.d.ts",
@@ -16,7 +16,9 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
