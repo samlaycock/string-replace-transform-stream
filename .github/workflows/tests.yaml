@@ -1,6 +1,6 @@
 name: Run Tests
 
-run-name: Running tests on ${{ github.event.pull_request.head.ref }} (${{ github.actor }}) 🤖
+run-name: Running tests on ${{ github.event.pull_request.head.ref }} (via ${{ github.actor }}) 🤖
 
 on:
   pull_request:
